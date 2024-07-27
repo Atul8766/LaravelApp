@@ -7,5 +7,5 @@ Route::get('/', function () {
 });
 
 Route::get("testing",function(){
-    return "this project is deployed by atul"
-})
+    return "this project is deployed by atul";
+});
