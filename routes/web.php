@@ -6,6 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("testing",function(){
-    return "this project is deployed by atul";
+Route::get("testing", function () {
+    return "<h1>this project is deployed by atul</h1>";
 });
