@@ -17,7 +17,7 @@ Route::get('/pokemon', function () {
 
 Route::get('/pokemon/{id}', function ($id) {
     $response = Http::get("https://pokeapi.co/api/v2/pokemon/{$id}");
-
+    // dd($response->json());
     if ($response->failed()) {
         return back()->withErrors(['Pokémon not found.']);
     }
